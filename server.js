@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 app.use('/message',messageRoute);
 app.use('/group',groupRoute);
 app.use('/private',privateRoute);
-app.use('user',userRoute)
+app.use('/user',userRoute)
 app.use('/auth', authRoute);
 app.use('/',(req,res,next)=>{
     res.status(200).json({message:'Server is Working...'});
